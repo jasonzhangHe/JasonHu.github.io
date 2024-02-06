@@ -99,10 +99,10 @@ npm run serve
 
 - 传统构建 与 `vite`构建对比图
 
-  ![2024020502](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020502.png)
+  ![2024020502](./images\2024020502.png)
 
 - 传统构建
-- ![2024020503](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020503.png)
+- ![2024020503](./images\2024020503.png)
 
 ###  2.5  文件结构 
 
@@ -111,17 +111,17 @@ npm run serve
   - 在 body 体中只有一个 div 标签，其 id 为 app，这个 id 将会连接到 src/main.js 内容。
     在浏览器打开的瞬间，浏览器中正文部分会瞬间显示 index.html 中定义的正文部分。上面有一个 id 为 app 的挂载点，之后我们的 Vue 根实例就会挂载到该挂载点上
 
-  ![image-20240205212848522](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020505.png)
+  ![image-20240205212848522](./images/2024020505.png)
 
 - `main.js`:    程序入口文件
 
   -  主要作用是初始化 vue 实例，并引入所需要的插件。新建了一个 vue 实例，并使用 el：#app 链接到 index.html 中的 app，并使用 template 引入组件    和路由相关的内容，也就是说通过 main.js 我们关联到 App.vue 组件
 
- ![2024020501](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020501.png)
+ ![2024020501](.\images\2024020501.png)
 
 - `env.d.ts`: 热加载入口
 
-  ![image-20240205212916082](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020506.png)
+  ![image-20240205212916082](.\images\2024020506.png)
 
  - node_modules: 依赖库
 
@@ -386,11 +386,11 @@ export default {
       })
       ```
 
-​    ![image-20240206163518123](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020601.png)
+​    ![image-20240206163518123](.\images\2024020601.png)
 
  3. 数据属性与分析
 
-    ![image-20240206165023723](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020602.png)
+    ![image-20240206165023723](.\images\2024020602.png)
 
 
 
@@ -404,7 +404,7 @@ export default {
   - JS中操作数据： ```xxx.value```
   - 模板中读取数据: 不需要.value，直接：```<div>{{xxx}}</div>```
 
-  ​       ![image-20240206170507419](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020603.png)
+  ​       ![image-20240206170507419](.\images\2024020603.png)
 
 
 
@@ -414,7 +414,7 @@ export default {
   - 基本类型的数据：响应式依然是靠``Object.defineProperty()``的```get```与```set```完成的。
   - 对象类型的数据：内部 <i style="color:gray;font-weight:bold">“ 求助 ”</i> 了Vue3.0中的一个新函数—— ```reactive```函数。
 
-  ​       ![image-20240206170538353](C:\Users\jasonzhang\Desktop\JasonHu-master\docs\vue\VUE创建应用程序.assets\2024020604.png)
+  ​       ![image-20240206170538353](./images\2024020604.png)
 
 ### 3.3.reactive函数
 
@@ -508,11 +508,11 @@ export default {
 
 - `ref`创建的变量必须使用`.value`(可以使用`volar` 插件自动添加`.value`)
 
-  ![image-20240206193521455](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020605.png)
+  ![image-20240206193521455](.\images\2024020605.png)
 
 - `reactive` 重新分配一个新对象,会**失去**响应式(可以使用`Object.assign`)
 
-   ![image-20240206194126301](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020606.png)
+   ![image-20240206194126301](.\images\2024020606.png)
 
 ### 3.9.使用原则
 
@@ -997,7 +997,7 @@ setup(props,context){
 
 - `vite`无法启动项目,报以下错误
   
-  - ![image-20240205204950367](F:\study\学习笔记仓库\JasonHu-master\docs\vue\images\2024020504.png)
+  - ![image-20240205204950367](.\images\2024020504.png)
   
   - 解决:  
   
