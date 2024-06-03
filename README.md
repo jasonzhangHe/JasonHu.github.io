@@ -6,6 +6,10 @@
 ###  Java
 *  [集合](docs/java/collection/Java集合常见面试题.md)
 
+### k8s
+
+- [k8s](docs/k8s/k8s的初始化与安装/README.md)
+
 ### 设计模式
 
 ####     1.创建型模式
